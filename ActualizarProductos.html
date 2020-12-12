@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <div class="registro-box">
+        <h1>Gestión Inventario de Accesorios de Playa</h1>
+        <h1>Actualización de Productos</h1>
+        <br>
+        <form method="GET" action="registro.php">        
+            <label for="referencia">Referencia del Producto:</label>
+            <input type="text" placeholder = "Escribe la referencia" name="referencia" id="referencia" maxlength="10" />
+            <br>
+            <br>
+            <label for="nombre">Nombre del Producto:</label>
+            <input type="text" placeholder = "Escribe el nombre" name="nombre" id="nombre" maxlength="25" />
+            <br>
+            <br>
+            <label for="nombre">Descripción del Producto:</label>
+            <input type="text" placeholder = "Escribe la descripcion" name="descripcion" id="descripcion" maxlength="50" />
+            <br>
+            <br>
+            <label for="cantidad">Cantidad del Producto:</label>
+            <input type="text" placeholder = "Escribe la cantidad" name="cantidad" id="cantidad" maxlength="4" />
+            <br><br>
+            <label for="estado">Estado del Producto:</label>
+            <select name="Activo">
+                <option value="1">Activo</option>
+                <option value="0">Inactvo</option>
+            </select>
+            <br>
+            <br>
+            <label for="imagen">Imagen del Producto:</label>
+            <input type="file" name="imagen" id="imagen"> 
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Actualizar">
+            <input type="submit" value="Cancelar">
+         </form>
+
+    </div>
+    
+   </body>
+</html>
