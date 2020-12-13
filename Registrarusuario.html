@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
@@ -12,26 +12,38 @@
 <body>
     <form class="formulario">
     
-    <h1>Crear usuario</h1>
-     <div class="contenedor">
-     
-     
-         
-         <div class="input-contenedor">
-         <i class="fas fa-envelope icon"></i>
-         <input type="text" placeholder="Correo Electronico">
-         
-         </div>
-         
-         <div class="input-contenedor">
-        <i class="fas fa-key icon"></i>
-         <input type="password" placeholder="Contraseña">
-         
-         </div>
-         <input type="submit" value="Registrar" class="button">
-         <p>Los mejores acceserios de playa.</p>
-         
-     </div>
-    </form>
+    <h1>Registrar usuario</h1>
+    <div class="contenedor">
+
+
+        <div class="input-contenedor">
+            <i class="fas fa-envelope icon"></i>
+            <input type="text" placeholder="Nombre">
+        </div>
+
+        <div class="input-contenedor">
+            <i class="fas fa-envelope icon"></i>
+            <input type="text" placeholder="Correo Electronico">
+        </div>
+
+        <div class="input-contenedor">
+            <i class="fas fa-envelope icon"></i>
+            <input type="text" placeholder="Contraseña Temporal">
+        </div>
+
+        <br />
+        <div class="input-contenedor">
+            <label for="estado">Tipo de usuario:</label>
+            <select name="Activo">
+                <option value="1">Administrador</option>
+                <option value="0">Vendedor</option>
+            </select>
+        </div>
+
+            <input type="submit" value="Registrar" class="button">
+            <p>Los mejores accesorios de playa.</p>
+
+    </div>
+</form>
 </body>
 </html>
