@@ -1,47 +1,90 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/estilos_general.css">
 </head>
 <body>
-    <div class="registro-box">
-        <h1>Gestión Inventario de Accesorios de Playa</h1>
-        <h1>Eliminar  Productos</h1>
-        <br>
-        <form method="GET" action="registro.php">        
-            <label for="referencia">Referencia del Producto:</label>
-            <input type="text" placeholder = "Escribe la referencia" name="referencia" id="referencia" maxlength="10" /><input type="submit" value="Buscar por referencia">
-            <br>
-            <br>
-            <label for="nombre">Nombre del Producto:</label>
-            <input type="text" placeholder = "Escribe el nombre" name="nombre" id="nombre" maxlength="25" /><input type="submit" value="Buscar por nombre">
-            <br>
-            <br>
-            <label for="nombre">Descripción del Producto:</label>
-            <input type="text" placeholder = "Escribe la descripcion" name="descripcion" id="descripcion" maxlength="50" />
-            <br>
-            <br>
-            <label for="cantidad">Cantidad del Producto:</label>
-            <input type="text" placeholder = "Escribe la cantidad" name="cantidad" id="cantidad" maxlength="4" />
-            <br><br>
-            <label for="estado">Estado del Producto:</label>
-            <select name="Activo">
-                <option value="1">Activo</option>
-                <option value="0">Inactvo</option>
-            </select>
-            <br>
-            <br>
-            <label for="imagen">Imagen del Producto:</label>
-            <input type="file" name="imagen" id="imagen"> 
-            <br>
-            <br>
-            <br>
-            <input type="submit" value="Eliminar producto">
-            <input type="submit" value="Cancelar">
-         </form>
+    <div id="container">
+        <header>
+            <br />
+            <h1> BEACH FUNNY</h1>
+            <h2> Accesorios para playa</h2>
+            <p>  Los mejores accesorios a los mejores precios</p>
+        </header>
 
+        <nav>
+            <ul>
+                <li>
+                    <a href="Login.html" target="_blank">Login</a>
+                </li>
+                <li>
+                    Crear usuario
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="BuscarProductos.html" target="_blank">
+                        Buscar
+                    </a>
+                </li>
+                <li>
+                    <a href="RegistroProductos.html" target="_blank">
+                        Agregar
+                    </a>
+                </li>
+                <li>
+                    <a href="ActualizarProductos.html" target="_blank">
+                        Actualizar
+                    </a>
+                </li>
+                <li>
+                    <a href="EliminarProductos.html" target="_blank">
+                        Eliminar
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="clearfix"></div>
+
+        <div class="registro-box">
+            <h1>Gestión Inventario de Accesorios de Playa</h1>
+            <h1>Eliminar  Productos</h1>
+            <br>
+            <form method="GET" action="registro.php">
+                <label for="referencia">Referencia del Producto:</label>
+                <input type="text" placeholder="Escribe la referencia" name="referencia" id="referencia" maxlength="10" /><input type="submit" value="Buscar por referencia">
+                <br>
+                <br>
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" placeholder="Escribe el nombre" name="nombre" id="nombre" maxlength="25" /><input type="submit" value="Buscar por nombre">
+                <br>
+                <br>
+                <label for="nombre">Descripción del Producto:</label>
+                <input type="text" placeholder="Escribe la descripcion" name="descripcion" id="descripcion" maxlength="50" />
+                <br>
+                <br>
+                <label for="cantidad">Cantidad del Producto:</label>
+                <input type="text" placeholder="Escribe la cantidad" name="cantidad" id="cantidad" maxlength="4" />
+                <br><br>
+                <label for="estado">Estado del Producto:</label>
+                <select name="Activo">
+                    <option value="1">Activo</option>
+                    <option value="0">Inactvo</option>
+                </select>
+                <br>
+                <br>
+                <label for="imagen">Imagen del Producto:</label>
+                <input type="file" name="imagen" id="imagen">
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="Eliminar producto">
+                <input type="submit" value="Cancelar">
+            </form>
+
+        </div>
     </div>
-    
-   </body>
+</body>
 </html>
