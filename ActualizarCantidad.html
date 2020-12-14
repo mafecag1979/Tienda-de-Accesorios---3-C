@@ -26,39 +26,25 @@
         <div class="clearfix"></div>
 
         <div class="registro-box">
-            <h1>Gestión Inventario de Accesorios de Playa</h1>
-            <h1>Eliminar  Productos</h1>
+            <h2>Gestión Inventario Beach Funny</h2>
+            <h2>Actualizar  Productos</h2>
             <br>
             <form method="GET" action="registro.php">
                 <label for="referencia">Referencia del Producto:</label>
-                <input type="text" placeholder="Escribe la referencia" name="referencia" id="referencia" maxlength="10" /><input type="submit" value="Buscar por referencia">
+                <input type="text" placeholder="Escribe la referencia" name="referencia" id="referencia" maxlength="10" />
                 <br>
                 <br>
                 <label for="nombre">Nombre del Producto:</label>
-                <input type="text" placeholder="Escribe el nombre" name="nombre" id="nombre" maxlength="25" /><input type="submit" value="Buscar por nombre">
-                <br>
-                <br>
-                <label for="nombre">Descripción del Producto:</label>
-                <input type="text" placeholder="Escribe la descripcion" name="descripcion" id="descripcion" maxlength="50" />
+                <input type="text" placeholder="Escribe el nombre" name="nombre" id="nombre" maxlength="25" />
                 <br>
                 <br>
                 <label for="cantidad">Cantidad del Producto:</label>
                 <input type="text" placeholder="Escribe la cantidad" name="cantidad" id="cantidad" maxlength="4" />
-                <br><br>
-                <label for="estado">Estado del Producto:</label>
-                <select name="Activo">
-                    <option value="1">Activo</option>
-                    <option value="0">Inactvo</option>
-                </select>
                 <br>
                 <br>
-                <label for="imagen">Imagen del Producto:</label>
-                <input type="file" name="imagen" id="imagen">
-                <br>
-                <br>
-                <br>
-                <input type="submit" value="Eliminar producto">
-                <button onclick="goBack()">Cancelark</button>
+                <input type="submit" value="Guardar">
+
+                <button onclick="goBack()">Cancelar</button>
 
                 <script>
                     function goBack() {
@@ -68,6 +54,7 @@
             </form>
 
         </div>
+
     </div>
 </body>
 </html>

@@ -58,7 +58,13 @@
                 <br>
                 <br>
                 <input type="submit" value="Guardar">
-                <input type="submit" value="Cancelar">
+                <button onclick="goBack()">Cancelar</button>
+
+                <script>
+                    function goBack() {
+                        window.history.back();
+                    }
+                </script>
             </form>
 
         </div>
